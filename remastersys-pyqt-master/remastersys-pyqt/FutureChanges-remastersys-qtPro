@@ -1,0 +1,8 @@
+
+
+remastersys-qt.pro
+
+remastersys.py
+remastersys_rc.py
+ui/remastersys.ui \
+etc.
