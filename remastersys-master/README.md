@@ -1,7 +1,7 @@
-remastersys
+respin
 ===========
 
-Remastersys Tool for Backup Your Ubuntu System
+Respin Tool for Backup Your Ubuntu System
 
-Fork from [http://www.remastersys.com](http://www.remastersys.com/)
+Fork from [http://www.remastersys.org](http://www.remastersys.org/)
 

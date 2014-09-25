@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#
+# Copyright (C) 2014 Adrenaline <adrenaline@azloco.com>,sergio mejia, marcia wilbur <aicra@remastersys.org>
 # Copyright (C) 2013 mutse <yyhoo2.young@gmail.com>
 #
 
