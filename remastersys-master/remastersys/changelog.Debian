@@ -1,4 +1,4 @@
-remastersys (3.0.3-1) unstable; urgency=low
+remastersys (3.0.5) unstable; urgency=low
 
       * 3.0.3-1
       * fixed .disk/info for new usb-creator code that checks version of ubuntu and uses syslinux-legacy for version older than 10.10

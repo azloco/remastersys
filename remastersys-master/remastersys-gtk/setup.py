@@ -7,9 +7,9 @@ from setuptools import setup, find_packages
 setup(name = 'remastersys-gtk',
     version = '3.0.4',
     description='Ubuntu and variant system remaster. This is the alternate gtk gui for remastersys written in pygtk.',
-    author='Tony Brijeski',
+    author='Tony Brijeski', 
     author_email='tb6517@yahoo.com',
-    url='http://www.remastersys.com',
+    url='http://www.remastersys.org',
     scripts=['remastersys-gtk'],
     packages = find_packages(),
     data_files = [

@@ -4,10 +4,10 @@
 # 
 #
 #
-#  Created by Tony "Fragadelic" Brijeski
-#
+#  Copyright 2014  Adrenaline, Sergio Mejia, Marcia "aicra" Wilbur
 #  Copyright 2011,2012 Under the GNU GPL2 License
-#
+#  Created by Tony "Fragadelic" Brijeski
+
 #  Created November 23, 2011
 #
 testroot="`whoami`"
