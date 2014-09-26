@@ -5,17 +5,19 @@
 #
 #
 #  Created by Tony "Fragadelic" Brijeski
-#
+#  Copyright 2014 Adrenaline <adrenaline@azloco.com>, Sergio Mejia, Marcia "aicra" Wilbur <aicra@remastersys.org>
 #  Copyright 2007-2012 Tony "Fragadelic" Brijeski <tb6517@yahoo.com>
 #
 #  Originally Created February 12th, 2007
-#
+#  Updated September 21, 20014
 #
 #
 #  This version is only for Ubuntu's and variants of Lucid 10.04 and up
 #
 #
-# Code cleanup with suggestions and code from Ivailo (a.k.a. SmiL3y) 
+# Code cleanup with suggestions and code from Ivailo (a.k.a. SmiL3y)
+#
+# THESE DIRECTORIES MUST BE CHANGED 
 
 . /etc/remastersys/remastersys.version
 
