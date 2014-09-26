@@ -4,7 +4,7 @@
     <name>AboutDialog</name>
     <message>
         <location filename="ui_aboutdialog.py" line="76"/>
-        <source>About Remastersys</source>
+        <source>About Respin</source>
         <translation type="unfinished">关于 Remastersys</translation>
     </message>
     <message>

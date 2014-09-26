@@ -4,7 +4,7 @@
     <name>AboutDialog</name>
     <message>
         <location filename="ui_aboutdialog.py" line="76"/>
-        <source>About Remastersys</source>
+        <source>About Respin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -14,7 +14,7 @@
     </message>
     <message>
         <location filename="ui_aboutdialog.py" line="78"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Remastersys GUI Based on PyQt4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Respin GUI Based on PyQt4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
