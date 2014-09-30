@@ -1,0 +1,5 @@
+respin (3.0.5) unstable; urgency=low
+
+  * Initial release, first deb packaging
+
+-- aicra <aicra@remastersys.org> Sun, 21 Sept 2014 18:34:44 +0800
