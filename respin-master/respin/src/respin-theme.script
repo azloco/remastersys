@@ -1,31 +1,31 @@
 # This is an example plymouth plugin script
 
 # Load the image
-remastersys_image = Image("__THEMEPIC__");
+respin_image = Image("__THEMEPIC__");
 
-# Create a sprite of the remastersys
-remastersys_sprite = Sprite(remastersys_image);
+# Create a sprite of the respin
+respin_sprite = Sprite(respin_image);
 
 # Add your code here
 screen_ratio = Window.GetHeight() / Window.GetWidth();
-remastersys_image_ratio = remastersys_image.GetHeight() / remastersys_image.GetWidth();
+respin_image_ratio = respin_image.GetHeight() / respin_image.GetWidth();
 
-if (screen_ratio > remastersys_image_ratio)
+if (screen_ratio > respin_image_ratio)
   {  # Screen ratio is taller than image ratio, we will match the screen height
-     scale_factor =  Window.GetHeight() / remastersys_image.GetHeight();
+     scale_factor =  Window.GetHeight() / respin_image.GetHeight();
   }
 else
   {  # Screen ratio is wider than image ratio, we will match the screen width
-     scale_factor =  Window.GetWidth() / remastersys_image.GetWidth();
+     scale_factor =  Window.GetWidth() / respin_image.GetWidth();
   }
 
-scaled_remastersys_image = remastersys_image.Scale(remastersys_image.GetWidth()  * scale_factor,
-                                         remastersys_image.GetHeight() * scale_factor);
-remastersys_sprite = Sprite(scaled_remastersys_image); # Create the a sprite using the scaled image
+scaled_respin_image = respin_image.Scale(respin_image.GetWidth()  * scale_factor,
+                                         respin_image.GetHeight() * scale_factor);
+respin_sprite = Sprite(scaled_respin_image); # Create the a sprite using the scaled image
 
-remastersys_sprite.SetX(Window.GetWidth()  / 2 - scaled_remastersys_image.GetWidth () / 2); # Place in the centre
-remastersys_sprite.SetY(Window.GetHeight() / 2 - scaled_remastersys_image.GetHeight() / 2);
-remastersys_sprite.SetZ(-10000); # Place right at the back
+respin_sprite.SetX(Window.GetWidth()  / 2 - scaled_respin_image.GetWidth () / 2); # Place in the centre
+respin_sprite.SetY(Window.GetHeight() / 2 - scaled_respin_image.GetHeight() / 2);
+respin_sprite.SetZ(-10000); # Place right at the back
 
 
 

@@ -12,4 +12,4 @@
 	dh $@ 
 
 override_build:
-	gzip -9 debian/usr/share/man/man1/remastersys.1
+	gzip -9 debian/usr/share/man/man1/respin.1
