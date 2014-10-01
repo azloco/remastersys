@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#
+# Copyright (C) Adreanaline, Sergio Mejia, Marcia Wilbur
 # Copyright (C) 2013 mutse
 #
+# Modified by: adrenaline <adrenaline@azloco.com>
 # Author: mutse <yyhoo2.young@gmail.com>
 #
 

@@ -26,15 +26,15 @@ class ConfigDialog(QDialog, Ui_ConfigDialog):
         self.showMainWin.emit()
 
     def readConfig(self):
-        workDir = "/home/remastersys"
+        workDir = "/home/respin"
         liveUser = "custom"
         liveLabel = "Custom Live CD"
         customIso = "custom$1.iso"
         opts = "-no-recovery -always-use-fragments -b 1M -no-duplicates"
         backupShow = "1"
-        url = "https://github.com/mutse/remastersys-pyqt"
+        url = "https://github.com/chamuco/remastersys"
         
-        file = QFile("./remastersys.conf")
+        file = QFile("./respin.conf")
         if file.exists():
             if not file.open(QIODevice.ReadOnly | QIODevice.Text):
                 return
@@ -78,7 +78,7 @@ class ConfigDialog(QDialog, Ui_ConfigDialog):
         self.lineEdit_8.setText(url)
 
     def writeConfig(self):
-        file = QFile("./remastersys.conf")
+        file = QFile("./respin.conf")
         if file.open(QFile.WriteOnly | QFile.Truncate):
             out = QTextStream(file)
             out << "#Remastersys Global Configuration File\n"

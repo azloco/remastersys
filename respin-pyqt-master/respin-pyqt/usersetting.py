@@ -32,7 +32,7 @@ class UserSetting(QDialog, Ui_UserSetting):
         if self.listWidget.currentItem() != None:
             str = self.listWidget.currentItem().text()
             QMessageBox.information(self, "select", QString(str))
-            cmd = "remastersys-skelcopy " + str;
+            cmd = "respin-skelcopy " + str;
             #os.system(cmd.toUtf8().data());
 
         self.close()

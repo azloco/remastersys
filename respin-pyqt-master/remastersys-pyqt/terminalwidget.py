@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Copyright (C) 2014 adrenaline <adrenaline@azloco.com>, sergio mejia, Marcia Wilbur
 # Copyright (C) 2013 mutse <yyhoo2.young@gmail.com>
 #
 # This program is portted from https://code.google.com/p/qterminal/
