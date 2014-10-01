@@ -26,8 +26,8 @@
    <string>About Remastersys</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="remastersys.qrc">
-    <normaloff>:/images/remastersys.png</normaloff>:/images/remastersys.png</iconset>
+   <iconset resource="respin.qrc">
+    <normaloff>:/images/respin.png</normaloff>:/images/respin.png</iconset>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -77,7 +77,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="remastersys.qrc">:/images/remastersys.png</pixmap>
+    <pixmap resource="respin.qrc">:/images/respin.png</pixmap>
    </property>
   </widget>
   <widget class="QLabel" name="title">
@@ -132,7 +132,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;a href=&quot;https://github.com/mutse/remastersys-pyqt&quot;&gt;Homepage&lt;/a&gt;</string>
+    <string>&lt;a href=&quot;https://github.com/mutse/respin-pyqt&quot;&gt;Homepage&lt;/a&gt;</string>
    </property>
    <property name="openExternalLinks">
     <bool>true</bool>
@@ -205,7 +205,7 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <resources>
-  <include location="remastersys.qrc"/>
+  <include location="respin.qrc"/>
  </resources>
  <connections>
   <connection>

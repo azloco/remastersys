@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright (C) 2014 Adrenaline <adrenaline@azloco.com>,sergio mejia, marcia wilbur <aicra@remastersys.org>
+# Copyright (C) 2014 Adrenaline <adrenaline@azloco.com>,sergio mejia, marcia wilbur <aicra@respin.org>
 # Copyright (C) 2013 mutse <yyhoo2.young@gmail.com>
 #
 
@@ -9,15 +9,15 @@ from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
 from aboutdialog import AboutDialog
-from ui.ui_remastersys import Ui_Remastersys
+from ui.ui_respin import Ui_Respin
 from configdialog import ConfigDialog
 from plymouth import Plymouth
 from usersetting import UserSetting
-import remastersys_rc
+import respin_rc
 import sys
 import os
 
-class Remastersys(QMainWindow, Ui_Remastersys):
+class Respin(QMainWindow, Ui_Respin):
     def __init__(self, parent = None):
         QMainWindow.__init__(self, parent)
 
@@ -68,11 +68,11 @@ class Remastersys(QMainWindow, Ui_Remastersys):
                 if i == 0: # for Backup mode
                     if self.console1.isHidden():
                         self.mainImg.hide()
-                        self.console1.StartProcess(QString("pwd")) #remastersys backup
+                        self.console1.StartProcess(QString("pwd")) #respin backup
                         self.console1.show()
                 elif i == 1: # for Dist mode
                     if self.console2.isHidden():
-                        self.console2.StartProcess(QString("ls")) #remastersys dist
+                        self.console2.StartProcess(QString("ls")) #respin dist
                         self.console2.show();
                 elif i == 2: # for Custom mode
                     self.splashImgBtn.clicked.connect(self.pickSplash)
@@ -93,7 +93,7 @@ class Remastersys(QMainWindow, Ui_Remastersys):
 
         if not fileName.isEmpty():
             QMessageBox.information(self, "Splash", fileName)
-            cmd = "cp -f " + fileName + "/etc/remastersys/isolinux/splash.png"
+            cmd = "cp -f " + fileName + "/etc/respin/isolinux/splash.png"
             #os.system(cmd.toUtf8().data())
 
     def pickGrubImg(self):
@@ -121,12 +121,12 @@ class Remastersys(QMainWindow, Ui_Remastersys):
         self.configDlg.show()
 
     def clearLog(self):
-        os.system("remastersys clean")
+        os.system("respin clean")
 
     def checkLog(self):
-        file = QFile("/home/remastersys/remastersys/remastersys.log")
+        file = QFile("/home/respin/respin/respin.log")
         if not file.exists():
-            self.textEdit.setText("Logfile remastersys.log not found")
+            self.textEdit.setText("Logfile respin.log not found")
             return
 
         if not file.open(QIODevice.ReadOnly | QIODevice.Text):
@@ -143,7 +143,7 @@ class Remastersys(QMainWindow, Ui_Remastersys):
 if  __name__ == "__main__":
     app = QApplication(sys.argv)
     translator = QTranslator()
-    translator.load("./i18n/remastersys-qt_" + QLocale.system().name())
+    translator.load("./i18n/respin-qt_" + QLocale.system().name())
     app.installTranslator(translator)
 
     transQt = QTranslator()
@@ -153,8 +153,8 @@ if  __name__ == "__main__":
     app.installTranslator(transQt)
     app.setProperty("qtc_locale", QLocale.system().name())
 
-    win = Remastersys()
-    win.setWindowIcon(QIcon(QPixmap(":/images/remastersys.png")))
+    win = Respin()
+    win.setWindowIcon(QIcon(QPixmap(":/images/respin.png")))
     win.show()
 
     sys.exit(app.exec_())
