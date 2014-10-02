@@ -4,17 +4,17 @@
 import glob
 from setuptools import setup, find_packages
 
-setup(name = 'remastersys-gtk',
-    version = '3.0.4',
-    description='Ubuntu and variant system remaster. This is the alternate gtk gui for remastersys written in pygtk.',
+setup(name = 'respin-gtk',
+    version = '1.0',
+    description='Ubuntu and variant system remaster. This is the alternate gtk gui for respin written in pygtk.',
     author='Tony Brijeski', 
     author_email='tb6517@yahoo.com',
-    url='http://www.remastersys.org',
-    scripts=['remastersys-gtk'],
+    url='http://www.linuxrespin.org',
+    scripts=['respin-gtk'],
     packages = find_packages(),
     data_files = [
-        ('share/remastersys-gtk/ui/', glob.glob('data/ui/*.glade')),
-        ('share/remastersys-gtk/pixmaps/', glob.glob('data/pixmaps/*.png')),
+        ('share/respin-gtk/ui/', glob.glob('data/ui/*.glade')),
+        ('share/respin-gtk/pixmaps/', glob.glob('data/pixmaps/*.png')),
         ('bin/', glob.glob('data/scripts/plymouth-preview')),
         ('share/man/man1/', glob.glob('man/man1/*.1')),
     ],

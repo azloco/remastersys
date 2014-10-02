@@ -1,0 +1,73 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package respin
+dpkg-buildpackage: source version 1.0-2
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by root <root@wise-old-1>
+ dpkg-source --before-build respin
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b respin
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building respin using existing ./respin_1.0.orig.tar.gz
+dpkg-source: info: building respin in respin_1.0-2.debian.tar.gz
+dpkg-source: info: building respin in respin_1.0-2.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `respin' in `../respin_1.0-2_all.deb'.
+ dpkg-genchanges  >../respin_1.0-2_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build respin
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+E: respin changes: changed-by-address-malformed root <root@wise-old-1>
+W: respin source: package-needs-versioned-debhelper-build-depends 9
+W: respin source: missing-field-in-dep5-copyright license (paragraph at line 5)
+W: respin source: ancient-standards-version 3.9.2 (current is 3.9.5)
+W: respin: wrong-bug-number-in-closes l3:#XXXXXX
+E: respin: debian-changelog-file-contains-invalid-email-address root@wise-old-1
+W: respin: copyright-has-url-from-dh_make-boilerplate
+E: respin: copyright-contains-dh_make-todo-boilerplate
+W: respin: description-too-long
+E: respin: extended-description-is-empty
+W: respin: unknown-section extra
+E: respin: depends-on-essential-package-without-using-version depends: coreutils
+E: respin: depends-on-obsolete-package depends: mkisofs
+E: respin: depends-on-essential-package-without-using-version depends: findutils
+E: respin: depends-on-essential-package-without-using-version depends: bash
+E: respin: depends-on-essential-package-without-using-version depends: sed
+E: respin: depends-on-essential-package-without-using-version depends: mount
+E: respin: depends-on-essential-package-without-using-version depends: util-linux
+W: respin: binary-without-manpage usr/bin/respin-skelcopy
+W: respin: executable-not-elf-or-script etc/respin/preseed/custom.seed
+W: respin: executable-not-elf-or-script etc/respin/isolinux/isolinux.cfg.vesamenu
+W: respin: executable-not-elf-or-script etc/respin/respin.version
+W: respin: executable-not-elf-or-script etc/respin.conf
+Finished running lintian.

@@ -1,0 +1,12 @@
+Source: respin-gtk
+Maintainer: adrenaline <adrenaline@azloco.com> aicra <aicra@remastersys.org> Sergio Mejia
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7.4.3), intltool, dh-translations, python-distutils-extra
+Standards-Version: 3.9.1
+Package: respin-gtk
+Architecture: all
+Version: 1.0
+Depends: python-glade2, python-vte, plymouth-x11, respin
+Description: Ubuntu and variant system remaster. This is the alternate gt
+
