@@ -1,11 +1,11 @@
-Source: remastersys-gtk
-Maintainer: mutse <yyhoo2.young@gmail.com>
+Source: respin-gtk
+Maintainer: aicra <aicra@linuxrespin.org>
 Section: python
 Priority: optional
 Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7.4.3), intltool, dh-translations, python-distutils-extra
 Standards-Version: 3.9.1
 
-Package: remastersys-gtk
+Package: respin-gtk
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-glade2, python-vte, plymouth-x11, remastersys
 Description: Ubuntu and variant system remaster. This is the alternate gt
