@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 09 Oct 2014 22:07:16 -0700
+Source: respin
+Binary: respin
+Architecture: source all
+Version: 1.2
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: adrenaline <adrenaline@azloco.com>
+Changed-By: MAINTAINER <adrenaline@azloco.net>
+Description: 
+ respin     - Backup Your deb based system With Respin
+Changes: 
+ respin (1.2) UNRELEASED; urgency=medium
+ .
+   * Initial release. (Closes: #XXXXXX)
+Checksums-Sha1: 
+ 74b2e3c140d8ea5bba94a94fae60f01657e619b9 776 respin_1.2.dsc
+ ab87aefaac1d1e8905eac5e3d6224ab39f697bda 108163 respin_1.2.orig.tar.gz
+ 65174256c46bfec85231ab88171608f8245ac0bf 2252 respin_1.2.debian.tar.gz
+ cd79051fc4331ec81482e7c7d3f1ba152f1b891d 102554 respin_1.2_all.deb
+Checksums-Sha256: 
+ fc4a665bd8cb778fad3db5c2ba790902d90d972f954d07a78e5435ee58b93050 776 respin_1.2.dsc
+ edea5c630261ce5b5f73b0ef555e5f6a3761ecefc0480119820281d2fa021e54 108163 respin_1.2.orig.tar.gz
+ b136297ce5e21e373c04f420549ca9f89d61c2cad6739e82e9638e229e52d4a8 2252 respin_1.2.debian.tar.gz
+ a508456c64b2a46e7e0ea95200422e7e2adfd8305f9bba87b4a9fd841802f421 102554 respin_1.2_all.deb
+Files: 
+ 1f3b0b4fc40e9d32e44f5c4a65ccc54b 776 extra optional respin_1.2.dsc
+ f521a6fea2aedd5a0f7689a892e4ee35 108163 extra optional respin_1.2.orig.tar.gz
+ e09d060b429cec6462855846ff61ede4 2252 extra optional respin_1.2.debian.tar.gz
+ 3270ea07d997d8cc7de202c80f8d4be0 102554 extra optional respin_1.2_all.deb
