@@ -1,0 +1,6 @@
+2b5609d87bb9742842090012335412a0  usr/bin/respin
+09f6be62cf6ef976f253ebe3b7c32154  usr/bin/respin-skelcopy
+b098709b6ca072504d2f9a55673882f6  usr/share/doc/respin/README
+d982706772b0101983c35de19a9a6dc4  usr/share/doc/respin/changelog.Debian.gz
+22e8a70e81cd54501bd4e0bb56c019b8  usr/share/doc/respin/copyright
+8d1de467724aed76e4ea97280ca86c47  usr/share/man/man1/respin.1.gz
