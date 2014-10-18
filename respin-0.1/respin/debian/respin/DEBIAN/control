@@ -1,0 +1,10 @@
+Package: respin
+Version: 0.1-1
+Architecture: all
+Maintainer: adrenaline <adrenaline@azloco.com>
+Installed-Size: 261
+Suggests: respin-gui
+Priority: optional
+Homepage: http://www.linuxrespin.org
+Description: Backup Your deb based system With Respin
+ Ubuntu and variant system- creates a livecd of the installed system.

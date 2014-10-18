@@ -1,0 +1,78 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+parsechangelog/debian: warning:     debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-buildpackage: source package respin
+dpkg-buildpackage: source version 0.1-1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by adrenaline  <adrenaline@azloco.com>
+ dpkg-source --before-build respin
+dpkg-buildpackage: host architecture amd64
+parsechangelog/debian: warning: respin/debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b respin
+parsechangelog/debian: warning: respin/debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building respin using existing ./respin_0.1.orig.tar.gz
+parsechangelog/debian: warning: respin/debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-source: info: building respin in respin_0.1-1.debian.tar.gz
+dpkg-source: info: building respin in respin_0.1-1.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+parsechangelog/debian: warning:     debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+parsechangelog/debian: warning:     debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-gencontrol: warning: Depends field of package respin: unknown substitution variable ${shlibs:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `respin' in `../respin_0.1-1_all.deb'.
+ dpkg-genchanges  >../respin_0.1-1_amd64.changes
+parsechangelog/debian: warning:     debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+parsechangelog/debian: warning:     debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-genchanges: warning: missing Section for binary package respin; using '-'
+dpkg-genchanges: warning: missing Section for source files
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build respin
+parsechangelog/debian: warning: respin/debian/changelog(l3): found trailer where expected start of change data
+LINE:  -- adrenaline  <adrenaline@azloco.com>  Wed, 1 Oct 2014 01:14:04 +0100
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: respin source: no-section-field-for-source
+W: respin source: missing-field-in-dep5-copyright license (paragraph at line 5)
+W: respin: syntax-error-in-debian-changelog line 3 "found trailer where expected start of change data"
+W: respin: new-package-should-close-itp-bug
+W: respin: no-section-field
+W: respin: binary-without-manpage usr/bin/respin-skelcopy
+W: respin: executable-not-elf-or-script etc/respin/preseed/custom.seed
+W: respin: executable-not-elf-or-script etc/respin/respin.version
+W: respin: executable-not-elf-or-script etc/respin.conf
+W: respin: executable-not-elf-or-script etc/respin/isolinux/isolinux.cfg.vesamenu
+Finished running lintian.
