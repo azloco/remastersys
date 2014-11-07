@@ -1,0 +1,17 @@
+Source: respin
+#Section: extra
+Priority: optional
+Maintainer: adrenaline <adrenaline@azloco.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://www.linuxrespin.org
+
+#Vcs-Git: git://git.debian.org/collab-maint/remastersys.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/remastersys.git;a=summary
+
+Package: respin
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: respin-gui
+Description: Backup Your deb based system With Respin
+ Ubuntu and variant system- creates a livecd of the installed system.
